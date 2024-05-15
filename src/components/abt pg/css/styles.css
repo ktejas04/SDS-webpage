@@ -1,0 +1,62 @@
+body {
+  overflow-x: hidden;
+}
+.welcome {
+  min-height: 100vh;
+  font-size: 2rem;
+  color: white;
+
+  display: inline-block;
+}
+.asocials a {
+  color: white;
+  margin: 0 0.5%;
+  transition: all 0.3s ease;
+}
+.asocials a:hover {
+  color: #858585;
+}
+.asocials a svg.svg-inline--fa {
+  height: 30px;
+}
+.we {
+  color: #ff0000;
+  padding-left: 15%;
+  padding-right: 15%;
+  background: -webkit-linear-gradient(#4c239d, #ff00c6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+.headings {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 2.55rem;
+}
+.para {
+  font-family: "Alice";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.who {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: auto;
+  font-size: 2rem;
+  color: white;
+
+  background-image: linear-gradient();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}

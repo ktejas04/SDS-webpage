@@ -1,0 +1,59 @@
+.content h2 b{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-family: montserrat;
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80%{
+    opacity:.7;
+  }
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+.type {
+  
+  color:#ffffff00;
+  background:
+    linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+    linear-gradient(#ffffff 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.055s) steps(var(--n)) forwards,
+    blinking 1s infinite;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: rgb(255, 255, 255)}
+  100% {border-right-color: transparent}
+}
+.who {
+  opacity: 0;
+  transform: translateY(50px); /* Start the text off-screen */
+  transition: opacity 1s, transform 1s;
+}
+.who.typing {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
