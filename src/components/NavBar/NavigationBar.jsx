@@ -32,8 +32,8 @@ function NavBar() {
           <CustomLink href="/BLOGS" className="pagesli">
             Blogs
           </CustomLink>
-          <CustomLink href="/ALUMNI" className="pagesli">
-            Alumni
+          <CustomLink href="/ALUMINI" className="pagesli">
+            Alumini
           </CustomLink>
           <CustomLink href="/EVENTS" className="pagesli">
             Events
