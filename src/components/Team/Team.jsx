@@ -1,6 +1,7 @@
 import React from "react"
 import "./Team.css"
 import defpfp from "/src/components/Team/images/default_pfp.png"
+import sds from "src/components/Team/images/rsz_3sds.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
@@ -20,7 +21,7 @@ function Card({ member, id }) {
           <ParticlesComponent id={`particles-${id}`} />
           <img
             className="logo"
-            src="src/components/Team/images/rsz_3sds.png"
+            src={sds}
             alt="sds"
           />
           <img className="tprofile" src={pfp || defpfp} alt={name} />
