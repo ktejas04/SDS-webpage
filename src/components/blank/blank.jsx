@@ -5,7 +5,7 @@ function Blank() {
   return (
     <div className="def-cont">
       <h1>This Page is Currently Unavailable</h1>
-      <h2>Availabe: "About","Team","Alumini"</h2>
+      <h6>Availabe: "About","Team","Alumini"</h6>
     </div>
   )
 }
