@@ -23,7 +23,7 @@ const ABT = () => {
       typingElements.forEach((typingElement) => {
         const elementOffsetTop = typingElement.getBoundingClientRect().top
 
-        // If the top of the element is in the viewport, add the typing class
+        // If the top of the element is in the viewport, add the typing className
         if (elementOffsetTop < windowHeight - 100) {
           typingElement.classList.add("typing")
         }
@@ -46,7 +46,7 @@ const ABT = () => {
   }, [])
 
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div className="bodyabt">
       <div className="background">
         {[...Array(30)].map((_, index) => (
           <span key={index}></span>
@@ -181,7 +181,7 @@ const ABT = () => {
         </p>
         <br />
       </div>
-      <div className="card-container">
+      <div className="cards-container">
         <article className="cards">
           <img
             className="card__background"

@@ -4,12 +4,13 @@
   background-attachment: fixed;
 }
 .container {
-  margin: clamp(1vh, 5vh, 10vh);
+  margin: 6vh clamp(1vh, 2vh, 5vh);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: clamp(10px, 1vh, 20px);
+  /* border: 2px solid white; */
 }
 .heading {
   font-size: clamp(1.5rem, 5vw, 2rem);
@@ -30,20 +31,26 @@
   align-items: center;
   margin: auto;
   padding: 0;
+  transform-style: preserve-3d;
   perspective: 2500px;
+  -webkit-transform-style: preserve-3d;
+  /* overflow: hidden; */
+  /* border: 2px solid white; */
 }
 
 .card {
   width: clamp(250px, 35vw, 300px);
   justify-self: center;
   align-items: center;
-  animation: fadeIn linear, fadeIn reverse linear;
-  animation-timeline: view();
-  animation-range: entry 10%, exit 10%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: all 1.4s ease;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 5% !important;
+  animation: fadeIn 1s ease;
+  /* animation-timeline: view();
+  animation-range: entry 10%, exit 10%; */
 }
 .card:hover {
   transform: rotateY(180deg);
@@ -53,11 +60,12 @@
   align-items: center;
   flex-direction: column;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border: 2px solid;
   border-radius: 5%;
   border-color: grey;
   height: clamp(350px, 24vw, 400px);
-  width: clamp(250px, 35vw, 300px);
+  width: clamp(250px, 34vw, 300px);
   overflow: hidden;
 }
 .back {
@@ -70,9 +78,10 @@
   align-items: center;
   text-align: center;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   height: clamp(350px, 24vw, 400px);
-  width: clamp(250px, 35vw, 300px);
+  width: clamp(250px, 34vw, 300px);
   background-color: black;
 }
 .back h3,
@@ -124,9 +133,9 @@ h2.frole {
 }
 @keyframes fadeIn {
   from {
-    scale: 0.7;
+    scale: 0.5;
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateY(2000px);
   }
   to {
     scale: 1;
@@ -134,18 +143,14 @@ h2.frole {
     transform: translateX(0px);
   }
 }
-
 @media (max-width: 810px) {
   .item-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 432px) {
+@media (max-width: 500px) {
   .item-container {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .card {
-    margin-left: 50px;
   }
   .tprofile {
     height: 80px;

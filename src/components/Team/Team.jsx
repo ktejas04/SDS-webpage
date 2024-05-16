@@ -19,11 +19,7 @@ function Card({ member, id }) {
         </div>
         <div className="back">
           <ParticlesComponent id={`particles-${id}`} />
-          <img
-            className="logo"
-            src={sds}
-            alt="sds"
-          />
+          <img className="logo" src={sds} alt="sds" />
           <img className="tprofile" src={pfp || defpfp} alt={name} />
           <h3 className="name">{name}</h3>
           <h4 className="role">{role}</h4>

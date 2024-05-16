@@ -1,5 +1,9 @@
 .def-cont {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  top: 50%;
-  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
