@@ -37,7 +37,13 @@
   /* overflow: hidden; */
   /* border: 2px solid white; */
 }
-
+.card-cont {
+  padding: 0;
+  margin: 0;
+  width: clamp(250px, 35vw, 300px);
+  justify-self: center;
+  /* border: 2px white solid; */
+}
 .card {
   width: clamp(250px, 35vw, 300px);
   justify-self: center;
@@ -52,7 +58,7 @@
   /* animation-timeline: view();
   animation-range: entry 10%, exit 10%; */
 }
-.card:hover {
+.card-cont:hover > .card {
   transform: rotateY(180deg);
 }
 .front {
@@ -67,6 +73,7 @@
   height: clamp(350px, 24vw, 400px);
   width: clamp(250px, 34vw, 300px);
   overflow: hidden;
+  transition: opacity 0.7s ease;
 }
 .back {
   border: 2px solid;
@@ -83,6 +90,8 @@
   height: clamp(350px, 24vw, 400px);
   width: clamp(250px, 34vw, 300px);
   background-color: black;
+  z-index: 0;
+  transition: opacity 0.7s ease;
 }
 .back h3,
 .back h4 {
@@ -121,6 +130,7 @@ h2.frole {
 }
 .socials {
   margin-bottom: clamp(10px, 1vh, 50px);
+  z-index: 1;
 }
 .socialt {
   margin: 0 25px;

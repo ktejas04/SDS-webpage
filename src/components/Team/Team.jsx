@@ -12,24 +12,26 @@ function Card({ member, id }) {
   const { name, role, pfp } = member
   return (
     <>
-      <div className="card">
-        <div className="front">
-          <img className="fprofile" src={pfp || defpfp} alt="person" />
-          <h2 className="frole">{role}</h2>
-        </div>
-        <div className="back">
-          <ParticlesComponent id={`particles-${id}`} />
-          <img className="logo" src={sds} alt="sds" />
-          <img className="tprofile" src={pfp || defpfp} alt={name} />
-          <h3 className="name">{name}</h3>
-          <h4 className="role">{role}</h4>
-          <div className="socials">
-            <a href="#" className="socialt">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="#" className="socialt">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
+      <div className="card-cont">
+        <div className="card">
+          <div className="front">
+            <img className="fprofile" src={pfp || defpfp} alt="person" />
+            <h2 className="frole">{role}</h2>
+          </div>
+          <div className="back">
+            <ParticlesComponent id={`particles-${id}`} />
+            <img className="logo" src={sds} alt="sds" />
+            <img className="tprofile" src={pfp || defpfp} alt={name} />
+            <h3 className="name">{name}</h3>
+            <h4 className="role">{role}</h4>
+            <div className="socials">
+              <a href="#" className="socialt">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="#" className="socialt">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
