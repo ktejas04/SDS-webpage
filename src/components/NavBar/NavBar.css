@@ -3,8 +3,6 @@
   justify-content: space-between;
   align-items: center;
   height: clamp(4vh, 6vh, 7vh);
-  background-color: rgba(3, 0, 20, 0.09);
-  backdrop-filter: blur(10px);
   z-index: 100;
   position: fixed;
   width: 100vw;
@@ -14,6 +12,7 @@
 .Home {
   width: clamp(60px, 80px, 90px);
   transition: all 0.2s ease;
+  padding-right: 10px;
 }
 
 .Home img {
@@ -110,8 +109,18 @@ ul {
   .Home {
     order: 2;
   }
+  .Home a {
+    padding: 10px 7px 12px 0;
+    background-color: rgba(3, 0, 20, 0.09);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+  }
   .dropdown {
     order: 1;
+    padding: 2px 10px;
+    background-color: rgba(3, 0, 20, 0.09);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
   }
   ul {
     order: 3;
@@ -141,6 +150,8 @@ ul {
     transform: translateX(-100%);
     transition: all 0.5s ease;
     border-radius: 0%;
+    background-color: rgba(3, 0, 20, 0.09);
+    backdrop-filter: blur(10px);
   }
   .pagesli {
     display: flex;
