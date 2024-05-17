@@ -55,11 +55,13 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 5% !important;
-  transform: translate3d(0, 0, 0);
   animation: fadeIn 1s ease;
   /* pointer-events: auto; */
   /* animation-timeline: view();
   animation-range: entry 10%, exit 10%; */
+}
+.card:not(.flipped) {
+  transition: all 1s ease-in-out;
 }
 .front {
   display: flex;
@@ -75,7 +77,7 @@
   overflow: hidden;
 }
 .back {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 5%;
   border-color: grey;
   position: absolute;
@@ -92,18 +94,16 @@
   z-index: 0;
 }
 .card-cont:hover .card {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 .card.flipped {
-  transform: rotateY(0deg) !important;
-  transition: all 0s !important;
+  transform: rotateY(360deg) !important;
+  transition: all 0s;
 }
 .card.flipped > .back {
   transform: rotateY(0deg);
-  backface-visibility: visible;
-  -webkit-backface-visibility: visible;
+  transition: all 0s;
 }
-
 .back h3,
 .back h4 {
   color: white;
