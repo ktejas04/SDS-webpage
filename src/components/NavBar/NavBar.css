@@ -60,7 +60,7 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 105%;
+  font-size: 130%;
 }
 .pagesli.active > a {
   color: orange;
@@ -69,7 +69,6 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 105%;
 }
 .social {
   display: flex;
@@ -110,7 +109,7 @@ ul {
     order: 2;
   }
   .Home a {
-    padding: 10px 7px 12px 0;
+    padding: 10 px 7px 12px 0;
     background-color: rgba(3, 0, 20, 0.09);
     backdrop-filter: blur(10px);
     border-radius: 25px;
