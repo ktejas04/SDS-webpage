@@ -42,6 +42,7 @@
   margin: 0;
   width: clamp(250px, 35vw, 300px);
   justify-self: center;
+  /* pointer-events: none; */
   /* border: 2px white solid; */
 }
 .card {
@@ -50,16 +51,15 @@
   align-items: center;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transition: all 1.4s ease;
+  transition: transform 1.4s ease;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 5% !important;
+  transform: translate3d(0, 0, 0);
   animation: fadeIn 1s ease;
+  /* pointer-events: auto; */
   /* animation-timeline: view();
   animation-range: entry 10%, exit 10%; */
-}
-.card-cont:hover > .card {
-  transform: rotateY(180deg);
 }
 .front {
   display: flex;
@@ -73,7 +73,6 @@
   height: clamp(350px, 24vw, 400px);
   width: clamp(250px, 34vw, 300px);
   overflow: hidden;
-  transition: opacity 0.7s ease;
 }
 .back {
   border: 2px solid;
@@ -91,8 +90,20 @@
   width: clamp(250px, 34vw, 300px);
   background-color: black;
   z-index: 0;
-  transition: opacity 0.7s ease;
 }
+.card-cont:hover .card {
+  transform: rotateY(-180deg);
+}
+.card.flipped {
+  transform: rotateY(0deg) !important;
+  transition: all 0s !important;
+}
+.card.flipped > .back {
+  transform: rotateY(0deg);
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
 .back h3,
 .back h4 {
   color: white;

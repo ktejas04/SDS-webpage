@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect, useRef } from "react"
 import "./Team.css"
 import defpfp from "/src/components/Team/images/default_pfp.png"
 import sds from "/src/components/Team/images/rsz_3sds.png"
@@ -10,32 +10,56 @@ import "./dots.css"
 
 function Card({ member, id }) {
   const { name, role, pfp } = member
+  const cardContRef = useRef(null)
+  const [flipped, setFlipped] = useState(false)
+  const timeoutRef = useRef(null)
+
+  const handleMouseEnter = () => {
+    timeoutRef.current = setTimeout(() => {
+      setFlipped(true)
+    }, 900)
+  }
+
+  const handleMouseLeave = () => {
+    clearTimeout(timeoutRef.current)
+    setFlipped(false)
+  }
+
+  useEffect(() => {
+    const cardCont = cardContRef.current
+    cardCont.addEventListener("mouseenter", handleMouseEnter)
+    cardCont.addEventListener("mouseleave", handleMouseLeave)
+
+    return () => {
+      cardCont.removeEventListener("mouseenter", handleMouseEnter)
+      cardCont.removeEventListener("mouseleave", handleMouseLeave)
+    }
+  }, [])
+
   return (
-    <>
-      <div className="card-cont">
-        <div className="card">
-          <div className="front">
-            <img className="fprofile" src={pfp || defpfp} alt="person" />
-            <h2 className="frole">{role}</h2>
-          </div>
-          <div className="back">
-            <ParticlesComponent id={`particles-${id}`} />
-            <img className="logo" src={sds} alt="sds" />
-            <img className="tprofile" src={pfp || defpfp} alt={name} />
-            <h3 className="name">{name}</h3>
-            <h4 className="role">{role}</h4>
-            <div className="socials">
-              <a href="#" className="socialt">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="#" className="socialt">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </div>
+    <div ref={cardContRef} className="card-cont">
+      <div className={`card ${flipped ? "flipped" : ""}`}>
+        <div className="front">
+          <img className="fprofile" src={pfp || defpfp} alt="person" />
+          <h2 className="frole">{role}</h2>
+        </div>
+        <div className="back">
+          <ParticlesComponent id={`particles-${id}`} />
+          <img className="logo" src={sds} alt="sds" />
+          <img className="tprofile" src={pfp || defpfp} alt={name} />
+          <h3 className="name">{name}</h3>
+          <h4 className="role">{role}</h4>
+          <div className="socials">
+            <a href="#" className="socialt">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="#" className="socialt">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -57,7 +81,7 @@ function Team() {
   ]
 
   return (
-    <body className="body">
+    <div className="body">
       <div className="container">
         <div className="background">
           {[...Array(30)].map((_, index) => (
@@ -71,7 +95,7 @@ function Team() {
           ))}
         </div>
       </div>
-    </body>
+    </div>
   )
 }
 
