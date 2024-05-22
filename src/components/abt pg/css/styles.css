@@ -12,17 +12,6 @@ body {
 
   display: inline-block;
 }
-.asocials a {
-  color: white;
-  margin: 0 0.5%;
-  transition: all 0.3s ease;
-}
-.asocials a:hover {
-  color: #858585;
-}
-.asocials a svg.svg-inline--fa {
-  height: 30px;
-}
 .we {
   color: #ff0000;
   padding-left: 15%;
