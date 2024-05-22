@@ -61,7 +61,10 @@ const ABT = () => {
           <span key={index}></span>
         ))}
       </div>
-      <div className="content" style={{ paddingBottom: "0px", display:"flex", flexDirection: "row" }}>
+      <div
+        className="content"
+        style={{ paddingBottom: "0px", display: "flex" }}
+      >
         <div className="welcome" style={{ paddingBottom: "0px" }}>
           <p
             style={{
@@ -121,9 +124,28 @@ const ABT = () => {
             </a>
           </div>
         </div>
-        <div style={{display:"flex", flexDirection:"column", marginTop: "100px", marginRight: "50px"}}>
-          <img src="rag_bootcamp.jpeg" style={{height:"400px", width: "380px", borderRadius: "20px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}/>
-          <a href="bootcamp" target="_blank"><button>Register now</button></a>
+        <div
+          className="reg"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "15vh",
+            marginRight: "10vw",
+          }}
+        >
+          <img
+            src="rag_bootcamp.jpeg"
+            style={{
+              height: "400px",
+              width: "380px",
+              borderRadius: "20px 20px 0px 0px",
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+          />
+          <a href="bootcamp" target="_blank">
+            <button>Register now</button>
+          </a>
         </div>
       </div>
       <section id="about" ref={aboutRef}>

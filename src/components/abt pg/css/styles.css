@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden;
 }
+.content {
+  flex-direction: row;
+}
 
 .welcome {
   min-height: 100vh;
@@ -66,6 +69,26 @@ body {
     margin-top: 2%;
   }
 }
-.content {
-  display: flex;
+@media (max-width: 825px) {
+  .content {
+    flex-direction: column;
+  }
+  .reg {
+    margin-right: 0 !important;
+    margin-bottom: 5%;
+    margin-top: 0 !important;
+  }
+}
+
+.reg {
+  z-index: 1;
+  align-items: center;
+}
+
+.reg button {
+  width: 380px;
+  border: #2b2bad 17px solid;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #007fdc;
+  color: white;
 }

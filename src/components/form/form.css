@@ -1,4 +1,4 @@
-.container {
+.fcontainer {
   font-family: sans-serif;
   font-size: 14px;
   display: flex;
@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100vw;
   overflow-x: hidden;
+  z-index: 1;
 }
 .clearfix:after {
   content: "";
@@ -48,7 +49,7 @@
   border-bottom: 3px solid rebeccapurple;
   margin: 0;
 }
-@media (max-width:370px){
+@media (max-width: 370px) {
   .form_wrapper h2 {
     font-size: 1.5em;
     color: rgb(153, 0, 255);
@@ -95,7 +96,9 @@
   padding-top: 12.5px;
 }
 
-.form_wrapper input[type=text], .form_wrapper input[type=email], .form_wrapper input[type=number] {
+.form_wrapper input[type="text"],
+.form_wrapper input[type="email"],
+.form_wrapper input[type="number"] {
   width: 100%;
   border-radius: 8px;
   padding: 8px 10px 9px 35px;
@@ -108,10 +111,14 @@
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.form_wrapper input[type=text]:hover, .form_wrapper input[type=email]:hover, .form_wrapper input[type=number]:hover {
+.form_wrapper input[type="text"]:hover,
+.form_wrapper input[type="email"]:hover,
+.form_wrapper input[type="number"]:hover {
   background: #fafafa;
 }
-.form_wrapper input[type=text]:focus, .form_wrapper input[type=email]:focus, .form_wrapper input[type=number]:focus {
+.form_wrapper input[type="text"]:focus,
+.form_wrapper input[type="email"]:focus,
+.form_wrapper input[type="number"]:focus {
   -webkit-box-shadow: 0 0 8px 4px rgb(153, 0, 255);
   -moz-box-shadow: 0 0 8px 4px rgb(153, 0, 255);
   box-shadow: 0 0 8px 4px rgb(153, 0, 255);
@@ -221,7 +228,7 @@
     opacity: 1;
   }
 }
-.loading-container1{
+.loading-container1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,13 +245,13 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin-left: 15px;
-  letter-spacing: 0.80px;
+  letter-spacing: 0.8px;
   text-align: center;
 }
-.loading-container1 img{
+.loading-container1 img {
   margin: 0 auto;
 }
-.SuccessPage{
+.SuccessPage {
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -253,19 +260,19 @@
   flex-direction: column;
   gap: 20px;
 }
-.SuccessPage h1{
+.SuccessPage h1 {
   text-align: center;
   color: white;
   font-size: 2rem;
   font-weight: 600;
 }
-.form_wrapper.None{
+.form_wrapper.None {
   display: none;
 }
-.SuccessPage.Success{
+.SuccessPage.Success {
   display: flex;
 }
-.GoBack{
+.GoBack {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -273,10 +280,10 @@
   gap: 10px;
   font-size: 1.2rem;
 }
-.GoBack a{
+.GoBack a {
   border-bottom: 2px solid white;
 }
-.loading-container2{
+.loading-container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,13 +300,13 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin-left: 15px;
-  letter-spacing: 0.80px;
+  letter-spacing: 0.8px;
   text-align: center;
 }
-.loading-container2 img{
+.loading-container2 img {
   margin: 0 auto;
 }
-.reEnter{
+.reEnter {
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -308,16 +315,16 @@
   flex-direction: column;
   gap: 20px;
 }
-.reEnter h1{
+.reEnter h1 {
   text-align: center;
   color: white;
   font-size: 30px;
   font-weight: 600;
 }
-.reEnter.Success{
+.reEnter.Success {
   display: flex;
 }
-.GoBack{
+.GoBack {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -325,6 +332,6 @@
   gap: 10px;
   font-size: 1.2rem;
 }
-.GoBack a{
+.GoBack a {
   border-bottom: 2px solid white;
 }
