@@ -8,9 +8,16 @@ import Blank from "./components/blank/blank.jsx"
 import "./App.css"
 
 function App() {
+  console.log(window.location.pathname)
   // const [count, setCount] = useState(0)
   let component
   switch (window.location.pathname) {
+    case "/":
+      component = <ABT />
+      break
+    case "/HOME":
+      component = <ABT />
+      break
     case "/ABOUT":
       component = <ABT />
       break

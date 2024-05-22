@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import "./css/styles.css"
 import "./css/dots.css"
 import "./css/cards.css"
@@ -12,7 +12,16 @@ import cardbg from "./images/abstract-background-images-wallpaper-ai-generated_6
 import sehasdev from "./images/Seshadev-Padhi-removebg-preview.png"
 import kirti from "./images/1709622482629.jpeg"
 
+// import REG_form from "../RAG-Reg/page.jsx"
+
 const ABT = () => {
+  const aboutRef = useRef(null)
+
+  useEffect(() => {
+    if (window.location.hash === "#about" && aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [])
   useEffect(() => {
     const typingElements = document.querySelectorAll(".who")
 
@@ -112,195 +121,202 @@ const ABT = () => {
             </a>
           </div>
         </div>
+        {/* <REG_form className="RAG" /> */}
       </div>
-
-      <div className="who" id="whi">
-        <h6 className="we">/WHO WE ARE</h6>
-        <h3 className="headings">
-          The Society for Data Science, BIT Mesra is a pioneering student-run,
-          not-for-profit organization dedicated to exploring the realms of data
-          science and its diverse interdisciplinary applications.
-        </h3>
-        <br />
-        <p className="para">
-          Since its founding in 2019, we have united students from various
-          disciplines behind our shared passion for all things data. Our mission
-          is to foster a strong data science community on campus. Each semester,
-          we focus on developing educational learning experiences like our
-          technical workshops and decal courses to expand data science education
-          on campus, hosting professional events for students to connect with
-          industry leaders and grow their network, and conducting analytics
-          consulting projects to help members gain experience and make an
-          impact. Our program provides over a hundred students each semester
-          with mentorship and data science skills through working in teams on a
-          tangible group project. We aim to build an inclusive and accessible
-          community where students of all levels and backgrounds can dive into
-          the world of data science.
-        </p>
-        <br />
-      </div>
-      <div className="profile-container">
-        <article className="profile">
-          <h2 className="profile-username">Define</h2>
-
-          <p>
-            Data science is a "concept to unify statistics, data analysis,
-            machine learning and their related methods" in order to "understand
-            and analyze actual phenomena" with data. It employs techniques and
-            theories drawn from many fields within the context of mathematics,
-            statistics, computer science, and information science.
-          </p>
-        </article>
-
-        <article className="profile">
-          <h2 className="profile-username">Build</h2>
-
-          <p>
-            You are going to need more than technical knowledge to succeed as a
-            data scientist. Build a Career in Data Science teaches you what
-            school leaves out, from how to land your first job to the lifecycle
-            of a data science project, and even how to become a manager.
-          </p>
-        </article>
-      </div>
-      <div className="who" id="whut">
-        <h6 className="we">
+      <section id="about" ref={aboutRef}>
+        <div className="who" id="whi">
+          <h6 className="we">/WHO WE ARE</h6>
+          <h3 className="headings">
+            The Society for Data Science, BIT Mesra is a pioneering student-run,
+            not-for-profit organization dedicated to exploring the realms of
+            data science and its diverse interdisciplinary applications.
+          </h3>
           <br />
-          /WHAT WE DO
-        </h6>
-        <h2 className="headings">
-          We have everything you need to launch and to grow your academic
-          environment.
-        </h2>
-        <br />
-        <p className="para">
-          The Society for Data Science is a non-profit society of data science
-          enthusiasts that serves our members, improving the data science
-          profession, eliminating bias and enhancing diversity, and advancing
-          ethical data science throughout the world.
-        </p>
-        <br />
-      </div>
-      <div className="cards-container">
-        <article className="cards">
-          <img
-            className="card__background"
-            src={cardbg}
-            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-            width="1920"
-            height="2193"
-          />
-          <div className="card__content | flow">
-            <div className="card__content--container | flow">
-              <h2 className="card__title">
-                🚀
-                <br />
-                Workshop
-              </h2>
-              <p className="card__description">
-                The Data Science Workshop focuses on building up your practical
-                skills so that you can understand how to develop simple machine
-                learning models in Python or even build an advanced model for
-                detecting potential bank frauds with effective modern data
-                science. You'll learn from real examples that lead to real
-                results.
-              </p>
-            </div>
-          </div>
-        </article>
-        <article className="cards">
-          <img
-            className="card__background"
-            src={cardbg}
-            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-            width="1920"
-            height="2193"
-          />
-          <div className="card__content | flow">
-            <div className="card__content--container | flow">
-              <h2 className="card__title">
-                ⚙️
-                <br />
-                Projects
-              </h2>
-              <p className="card__description">
-                "Unlock the power of data with our dynamic approach to analysis!
-                Dive into the world of data science, where scientific methods
-                and cutting-edge algorithms illuminate the path to discovery.
-                Harness the potential of machine learning with hands-on
-                expertise, transforming data into actionable insights. But wait,
-                there's more! Elevate your data science journey with impactful
-                projects, the cornerstone of your career growth. Let's embark on
-                this exciting adventure together!"
-              </p>
-            </div>
-          </div>
-        </article>
-        <article className="cards">
-          <img
-            className="card__background"
-            src={cardbg}
-            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-            width="1920"
-            height="2193"
-          />
-          <div className="card__content | flow">
-            <div className="card__content--container | flow">
-              <h2 className="card__title">
-                🌐
-                <br />
-                Open Source
-              </h2>
-              <p className="card__description">
-                You will dive into open source because Open-Source has become
-                the de facto way to build software — not only in tech, but
-                across diverse industries. As companies use open source code to
-                build their own commercial products and services, they also see
-                the strategic value of contributing back to those projects.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div className="who">
-        <h6 className="we">/WHAT THEY SAY</h6>
-        <h2 className="headings">Testimonials</h2>
-        <br />
-      </div>
-      <div className="profile-container">
-        <article className="profile">
-          <div className="profile-image">
-            <img src={sehasdev} alt="Profile" />
-          </div>
-          <h2 className="profile-username">Prof. S. Padhi</h2>
-          <small className="profile-user-handle">
-            Department of Mathematics
-          </small>
-          <p>
-            "Data scientists are analytical experts who utilize their skills in
-            both technology and social science to find trends and manage data.
-            They use industry knowledge, contextual understanding, skepticism of
-            existing assumptions - to uncover solutions to business challenges"
+          <p className="para">
+            Since its founding in 2019, we have united students from various
+            disciplines behind our shared passion for all things data. Our
+            mission is to foster a strong data science community on campus. Each
+            semester, we focus on developing educational learning experiences
+            like our technical workshops and decal courses to expand data
+            science education on campus, hosting professional events for
+            students to connect with industry leaders and grow their network,
+            and conducting analytics consulting projects to help members gain
+            experience and make an impact. Our program provides over a hundred
+            students each semester with mentorship and data science skills
+            through working in teams on a tangible group project. We aim to
+            build an inclusive and accessible community where students of all
+            levels and backgrounds can dive into the world of data science.
           </p>
-        </article>
+          <br />
+        </div>
+        <div className="profile-container">
+          <article className="profile">
+            <h2 className="profile-username">Define</h2>
 
-        <article className="profile">
-          <div className="profile-image">
-            <img src={kirti} alt="Profile" />
-          </div>
-          <h2 className="profile-username">Dr. Kirti Avishek</h2>
-          <small className="profile-user-handle">
-            Department of Civil and Environmental Science Engineering
-          </small>
-          <p>
-            "The expert at anything was once a beginner. We believe that the
-            most valuable asset of a community are the people passionate about
-            their field and willing to share their knowledge and experience with
-            others - that are true educators who help others grow!"
+            <p>
+              Data science is a "concept to unify statistics, data analysis,
+              machine learning and their related methods" in order to
+              "understand and analyze actual phenomena" with data. It employs
+              techniques and theories drawn from many fields within the context
+              of mathematics, statistics, computer science, and information
+              science.
+            </p>
+          </article>
+
+          <article className="profile">
+            <h2 className="profile-username">Build</h2>
+
+            <p>
+              You are going to need more than technical knowledge to succeed as
+              a data scientist. Build a Career in Data Science teaches you what
+              school leaves out, from how to land your first job to the
+              lifecycle of a data science project, and even how to become a
+              manager.
+            </p>
+          </article>
+        </div>
+        <div className="who" id="whut">
+          <h6 className="we">
+            <br />
+            /WHAT WE DO
+          </h6>
+          <h2 className="headings">
+            We have everything you need to launch and to grow your academic
+            environment.
+          </h2>
+          <br />
+          <p className="para">
+            The Society for Data Science is a non-profit society of data science
+            enthusiasts that serves our members, improving the data science
+            profession, eliminating bias and enhancing diversity, and advancing
+            ethical data science throughout the world.
           </p>
-        </article>
-      </div>
+          <br />
+        </div>
+        <div className="cards-container">
+          <article className="cards">
+            <img
+              className="card__background"
+              src={cardbg}
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div className="card__content | flow">
+              <div className="card__content--container | flow">
+                <h2 className="card__title">
+                  🚀
+                  <br />
+                  Workshop
+                </h2>
+                <p className="card__description">
+                  The Data Science Workshop focuses on building up your
+                  practical skills so that you can understand how to develop
+                  simple machine learning models in Python or even build an
+                  advanced model for detecting potential bank frauds with
+                  effective modern data science. You'll learn from real examples
+                  that lead to real results.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article className="cards">
+            <img
+              className="card__background"
+              src={cardbg}
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div className="card__content | flow">
+              <div className="card__content--container | flow">
+                <h2 className="card__title">
+                  ⚙️
+                  <br />
+                  Projects
+                </h2>
+                <p className="card__description">
+                  "Unlock the power of data with our dynamic approach to
+                  analysis! Dive into the world of data science, where
+                  scientific methods and cutting-edge algorithms illuminate the
+                  path to discovery. Harness the potential of machine learning
+                  with hands-on expertise, transforming data into actionable
+                  insights. But wait, there's more! Elevate your data science
+                  journey with impactful projects, the cornerstone of your
+                  career growth. Let's embark on this exciting adventure
+                  together!"
+                </p>
+              </div>
+            </div>
+          </article>
+          <article className="cards">
+            <img
+              className="card__background"
+              src={cardbg}
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div className="card__content | flow">
+              <div className="card__content--container | flow">
+                <h2 className="card__title">
+                  🌐
+                  <br />
+                  Open Source
+                </h2>
+                <p className="card__description">
+                  You will dive into open source because Open-Source has become
+                  the de facto way to build software — not only in tech, but
+                  across diverse industries. As companies use open source code
+                  to build their own commercial products and services, they also
+                  see the strategic value of contributing back to those
+                  projects.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div className="who">
+          <h6 className="we">/WHAT THEY SAY</h6>
+          <h2 className="headings">Testimonials</h2>
+          <br />
+        </div>
+        <div className="profile-container">
+          <article className="profile">
+            <div className="profile-image">
+              <img src={sehasdev} alt="Profile" />
+            </div>
+            <h2 className="profile-username">Prof. S. Padhi</h2>
+            <small className="profile-user-handle">
+              Department of Mathematics
+            </small>
+            <p>
+              "Data scientists are analytical experts who utilize their skills
+              in both technology and social science to find trends and manage
+              data. They use industry knowledge, contextual understanding,
+              skepticism of existing assumptions - to uncover solutions to
+              business challenges"
+            </p>
+          </article>
+
+          <article className="profile">
+            <div className="profile-image">
+              <img src={kirti} alt="Profile" />
+            </div>
+            <h2 className="profile-username">Dr. Kirti Avishek</h2>
+            <small className="profile-user-handle">
+              Department of Civil and Environmental Science Engineering
+            </small>
+            <p>
+              "The expert at anything was once a beginner. We believe that the
+              most valuable asset of a community are the people passionate about
+              their field and willing to share their knowledge and experience
+              with others - that are true educators who help others grow!"
+            </p>
+          </article>
+        </div>
+      </section>
     </div>
   )
 }

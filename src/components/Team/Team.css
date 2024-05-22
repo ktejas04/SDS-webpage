@@ -1,10 +1,9 @@
 .body {
-  background-image: url("./images/background.jpg");
   background-size: contain no-repeat;
   background-attachment: fixed;
 }
 .container {
-  margin: 6vh clamp(1vh, 2vh, 5vh);
+  margin: 8vh clamp(1vh, 2vh, 5vh);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,7 +26,7 @@
   height: auto;
   width: calc(100% - clamp(20px, 2vw, 40px));
   column-gap: clamp(10px, 5vh, 50px);
-  row-gap: clamp(10px, 1vw, 20px);
+  row-gap: clamp(1vh, 5vh, 6vh);
   align-items: center;
   margin: auto;
   padding: 0;

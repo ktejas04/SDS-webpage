@@ -20,7 +20,7 @@ function NavBar() {
           <MenuIcon />
         </div>
         <ul className="pages">
-          <CustomLink href="/ABOUT" className="pagesli">
+          <CustomLink href="/ABOUT#about" className="pagesli">
             About
           </CustomLink>
           <CustomLink href="/SERVICES" className="pagesli">
@@ -33,7 +33,7 @@ function NavBar() {
             Blogs
           </CustomLink>
           <CustomLink href="/ALUMINI" className="pagesli">
-            Alumini
+            Alumni
           </CustomLink>
           <CustomLink href="/EVENTS" className="pagesli">
             Events
