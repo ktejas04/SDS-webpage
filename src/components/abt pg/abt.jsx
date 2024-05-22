@@ -39,10 +39,7 @@ const ABT = () => {
       })
 
       // Remove event listener once the animation starts for all elements
-      if (
-        document.querySelectorAll(".who.typing").length ===
-        typingElements.length
-      ) {
+      if (document.querySelectorAll(".who.typing").length === typingElements.length) {
         window.removeEventListener("scroll", checkScroll)
       }
     }
@@ -61,10 +58,7 @@ const ABT = () => {
           <span key={index}></span>
         ))}
       </div>
-      <div
-        className="content"
-        style={{ paddingBottom: "0px", display: "flex" }}
-      >
+      <div className="content" style={{ paddingBottom: "0px", display: "flex" }}>
         <div className="welcome" style={{ paddingBottom: "0px" }}>
           <p
             style={{
@@ -105,8 +99,7 @@ const ABT = () => {
             >
               Dive into the boundless
               <span className="type" style={{ "--n": "116" }}>
-                world of data science with us, where inclusivity meets
-                innovation, empowering students of all backgrounds to excel!
+                world of data science with us, where inclusivity meets innovation, empowering students of all backgrounds to excel!
               </span>
             </p>
           </div>
@@ -124,23 +117,14 @@ const ABT = () => {
             </a>
           </div>
         </div>
-        <div
-          className="reg"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginTop: "15vh",
-            marginRight: "10vw",
-          }}
-        >
+        <div className="reg" style={{ display: "flex", flexDirection: "column", marginTop: "15vh", marginRight: "10vw" }}>
           <img
             src="rag_bootcamp.jpeg"
             style={{
               height: "400px",
               width: "380px",
               borderRadius: "20px 20px 0px 0px",
-              boxShadow:
-                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
             }}
           />
           <a href="bootcamp" target="_blank">
@@ -152,25 +136,16 @@ const ABT = () => {
         <div className="who" id="whi">
           <h6 className="we">/WHO WE ARE</h6>
           <h3 className="headings">
-            The Society for Data Science, BIT Mesra is a pioneering student-run,
-            not-for-profit organization dedicated to exploring the realms of
-            data science and its diverse interdisciplinary applications.
+            The Society for Data Science, BIT Mesra is a pioneering student-run, not-for-profit organization dedicated to exploring the realms of data science and its diverse interdisciplinary
+            applications.
           </h3>
           <br />
           <p className="para">
-            Since its founding in 2019, we have united students from various
-            disciplines behind our shared passion for all things data. Our
-            mission is to foster a strong data science community on campus. Each
-            semester, we focus on developing educational learning experiences
-            like our technical workshops and decal courses to expand data
-            science education on campus, hosting professional events for
-            students to connect with industry leaders and grow their network,
-            and conducting analytics consulting projects to help members gain
-            experience and make an impact. Our program provides over a hundred
-            students each semester with mentorship and data science skills
-            through working in teams on a tangible group project. We aim to
-            build an inclusive and accessible community where students of all
-            levels and backgrounds can dive into the world of data science.
+            Since its founding in 2019, we have united students from various disciplines behind our shared passion for all things data. Our mission is to foster a strong data science community on
+            campus. Each semester, we focus on developing educational learning experiences like our technical workshops and decal courses to expand data science education on campus, hosting
+            professional events for students to connect with industry leaders and grow their network, and conducting analytics consulting projects to help members gain experience and make an impact.
+            Our program provides over a hundred students each semester with mentorship and data science skills through working in teams on a tangible group project. We aim to build an inclusive and
+            accessible community where students of all levels and backgrounds can dive into the world of data science.
           </p>
           <br />
         </div>
@@ -179,12 +154,8 @@ const ABT = () => {
             <h2 className="profile-username">Define</h2>
 
             <p>
-              Data science is a "concept to unify statistics, data analysis,
-              machine learning and their related methods" in order to
-              "understand and analyze actual phenomena" with data. It employs
-              techniques and theories drawn from many fields within the context
-              of mathematics, statistics, computer science, and information
-              science.
+              Data science is a "concept to unify statistics, data analysis, machine learning and their related methods" in order to "understand and analyze actual phenomena" with data. It employs
+              techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, and information science.
             </p>
           </article>
 
@@ -192,11 +163,8 @@ const ABT = () => {
             <h2 className="profile-username">Build</h2>
 
             <p>
-              You are going to need more than technical knowledge to succeed as
-              a data scientist. Build a Career in Data Science teaches you what
-              school leaves out, from how to land your first job to the
-              lifecycle of a data science project, and even how to become a
-              manager.
+              You are going to need more than technical knowledge to succeed as a data scientist. Build a Career in Data Science teaches you what school leaves out, from how to land your first job to
+              the lifecycle of a data science project, and even how to become a manager.
             </p>
           </article>
         </div>
@@ -205,28 +173,17 @@ const ABT = () => {
             <br />
             /WHAT WE DO
           </h6>
-          <h2 className="headings">
-            We have everything you need to launch and to grow your academic
-            environment.
-          </h2>
+          <h2 className="headings">We have everything you need to launch and to grow your academic environment.</h2>
           <br />
           <p className="para">
-            The Society for Data Science is a non-profit society of data science
-            enthusiasts that serves our members, improving the data science
-            profession, eliminating bias and enhancing diversity, and advancing
-            ethical data science throughout the world.
+            The Society for Data Science is a non-profit society of data science enthusiasts that serves our members, improving the data science profession, eliminating bias and enhancing diversity,
+            and advancing ethical data science throughout the world.
           </p>
           <br />
         </div>
         <div className="cards-container">
           <article className="cards">
-            <img
-              className="card__background"
-              src={cardbg}
-              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-              width="1920"
-              height="2193"
-            />
+            <img className="card__background" src={cardbg} alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920" height="2193" />
             <div className="card__content | flow">
               <div className="card__content--container | flow">
                 <h2 className="card__title">
@@ -235,24 +192,14 @@ const ABT = () => {
                   Workshop
                 </h2>
                 <p className="card__description">
-                  The Data Science Workshop focuses on building up your
-                  practical skills so that you can understand how to develop
-                  simple machine learning models in Python or even build an
-                  advanced model for detecting potential bank frauds with
-                  effective modern data science. You'll learn from real examples
-                  that lead to real results.
+                  The Data Science Workshop focuses on building up your practical skills so that you can understand how to develop simple machine learning models in Python or even build an advanced
+                  model for detecting potential bank frauds with effective modern data science. You'll learn from real examples that lead to real results.
                 </p>
               </div>
             </div>
           </article>
           <article className="cards">
-            <img
-              className="card__background"
-              src={cardbg}
-              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-              width="1920"
-              height="2193"
-            />
+            <img className="card__background" src={cardbg} alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920" height="2193" />
             <div className="card__content | flow">
               <div className="card__content--container | flow">
                 <h2 className="card__title">
@@ -261,27 +208,15 @@ const ABT = () => {
                   Projects
                 </h2>
                 <p className="card__description">
-                  "Unlock the power of data with our dynamic approach to
-                  analysis! Dive into the world of data science, where
-                  scientific methods and cutting-edge algorithms illuminate the
-                  path to discovery. Harness the potential of machine learning
-                  with hands-on expertise, transforming data into actionable
-                  insights. But wait, there's more! Elevate your data science
-                  journey with impactful projects, the cornerstone of your
-                  career growth. Let's embark on this exciting adventure
-                  together!"
+                  "Unlock the power of data with our dynamic approach to analysis! Dive into the world of data science, where scientific methods and cutting-edge algorithms illuminate the path to
+                  discovery. Harness the potential of machine learning with hands-on expertise, transforming data into actionable insights. But wait, there's more! Elevate your data science journey
+                  with impactful projects, the cornerstone of your career growth. Let's embark on this exciting adventure together!"
                 </p>
               </div>
             </div>
           </article>
           <article className="cards">
-            <img
-              className="card__background"
-              src={cardbg}
-              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-              width="1920"
-              height="2193"
-            />
+            <img className="card__background" src={cardbg} alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920" height="2193" />
             <div className="card__content | flow">
               <div className="card__content--container | flow">
                 <h2 className="card__title">
@@ -290,12 +225,8 @@ const ABT = () => {
                   Open Source
                 </h2>
                 <p className="card__description">
-                  You will dive into open source because Open-Source has become
-                  the de facto way to build software — not only in tech, but
-                  across diverse industries. As companies use open source code
-                  to build their own commercial products and services, they also
-                  see the strategic value of contributing back to those
-                  projects.
+                  You will dive into open source because Open-Source has become the de facto way to build software — not only in tech, but across diverse industries. As companies use open source code
+                  to build their own commercial products and services, they also see the strategic value of contributing back to those projects.
                 </p>
               </div>
             </div>
@@ -313,15 +244,10 @@ const ABT = () => {
               <img src={sehasdev} alt="Profile" />
             </div>
             <h2 className="profile-username">Prof. S. Padhi</h2>
-            <small className="profile-user-handle">
-              Department of Mathematics
-            </small>
+            <small className="profile-user-handle">Department of Mathematics</small>
             <p>
-              "Data scientists are analytical experts who utilize their skills
-              in both technology and social science to find trends and manage
-              data. They use industry knowledge, contextual understanding,
-              skepticism of existing assumptions - to uncover solutions to
-              business challenges"
+              "Data scientists are analytical experts who utilize their skills in both technology and social science to find trends and manage data. They use industry knowledge, contextual
+              understanding, skepticism of existing assumptions - to uncover solutions to business challenges"
             </p>
           </article>
 
@@ -330,14 +256,10 @@ const ABT = () => {
               <img src={kirti} alt="Profile" />
             </div>
             <h2 className="profile-username">Dr. Kirti Avishek</h2>
-            <small className="profile-user-handle">
-              Department of Civil and Environmental Science Engineering
-            </small>
+            <small className="profile-user-handle">Department of Civil and Environmental Science Engineering</small>
             <p>
-              "The expert at anything was once a beginner. We believe that the
-              most valuable asset of a community are the people passionate about
-              their field and willing to share their knowledge and experience
-              with others - that are true educators who help others grow!"
+              "The expert at anything was once a beginner. We believe that the most valuable asset of a community are the people passionate about their field and willing to share their knowledge and
+              experience with others - that are true educators who help others grow!"
             </p>
           </article>
         </div>
