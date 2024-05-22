@@ -105,17 +105,6 @@ const ABT = () => {
           </div>
           <br />
           <br />
-          <div className="asocials" style={{ paddingLeft: "5%" }}>
-            <a href="https://www.facebook.com/people/Society-for-Data-Science-BIT-Mesra/100063931007042/">
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a href="https://www.instagram.com/sds.bitm/">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="https://www.linkedin.com/company/society-for-data-science-bit-mesra/mycompany/">
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-          </div>
         </div>
         <div className="reg" style={{ display: "flex", flexDirection: "column", marginTop: "15vh", marginRight: "10vw" }}>
           <img
