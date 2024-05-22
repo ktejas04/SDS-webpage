@@ -91,12 +91,10 @@ body {
 .profile-image {
   border-radius: 50%;
   overflow: hidden;
-  width: 175px;
-  height: 175px;
   border-radius: 50%;
   overflow: hidden;
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
   position: relative;
   position: relative;
   img {
