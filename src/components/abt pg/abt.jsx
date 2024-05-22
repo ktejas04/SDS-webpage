@@ -143,8 +143,9 @@ const ABT = () => {
             <h2 className="profile-username">Define</h2>
 
             <p>
-              Data science is a "concept to unify statistics, data analysis, machine learning and their related methods" in order to "understand and analyze actual phenomena" with data. It employs
-              techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, and information science.
+              Data science is the interdisciplinary field that 
+          uses statistical, computational, and analytical 
+          methods to extract insights and knowledge from data.
             </p>
           </article>
 
@@ -152,8 +153,10 @@ const ABT = () => {
             <h2 className="profile-username">Build</h2>
 
             <p>
-              You are going to need more than technical knowledge to succeed as a data scientist. Build a Career in Data Science teaches you what school leaves out, from how to land your first job to
-              the lifecycle of a data science project, and even how to become a manager.
+              Building a successful data science career 
+          involves more than technical skills, 
+          encompassing job acquisition, project management, 
+          and leadership development.
             </p>
           </article>
         </div>
@@ -181,8 +184,11 @@ const ABT = () => {
                   Workshop
                 </h2>
                 <p className="card__description">
-                  The Data Science Workshop focuses on building up your practical skills so that you can understand how to develop simple machine learning models in Python or even build an advanced
-                  model for detecting potential bank frauds with effective modern data science. You'll learn from real examples that lead to real results.
+                 The Data Science Workshop enhances your 
+              practical skills, teaching you to develop 
+              simple to advanced machine learning models 
+              in Python, including bank fraud detection, 
+              using real examples for real results.
                 </p>
               </div>
             </div>
@@ -197,9 +203,13 @@ const ABT = () => {
                   Projects
                 </h2>
                 <p className="card__description">
-                  "Unlock the power of data with our dynamic approach to analysis! Dive into the world of data science, where scientific methods and cutting-edge algorithms illuminate the path to
-                  discovery. Harness the potential of machine learning with hands-on expertise, transforming data into actionable insights. But wait, there's more! Elevate your data science journey
-                  with impactful projects, the cornerstone of your career growth. Let's embark on this exciting adventure together!"
+                 Unlock the power of data with our dynamic 
+              approach to analysis, using scientific 
+              methods and cutting-edge algorithms. Gain 
+              hands-on machine learning expertise and 
+              transform data into actionable insights 
+              through impactful projects. Embark on this 
+              exciting adventure and elevate your data science career!
                 </p>
               </div>
             </div>
@@ -214,8 +224,10 @@ const ABT = () => {
                   Open Source
                 </h2>
                 <p className="card__description">
-                  You will dive into open source because Open-Source has become the de facto way to build software — not only in tech, but across diverse industries. As companies use open source code
-                  to build their own commercial products and services, they also see the strategic value of contributing back to those projects.
+                  Open-source has become the standard for building 
+              software across diverse industries, with companies 
+              both using open source code for their products and 
+              recognizing the strategic value of contributing back.
                 </p>
               </div>
             </div>
