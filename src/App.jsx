@@ -6,6 +6,7 @@ import ParticlesComponent from "./components/Particlesbg/particles.jsx"
 import RegForm from "./components/form/Form.jsx"
 import ABT from "./components/abt pg/abt.jsx"
 import Blank from "./components/blank/blank.jsx"
+import Alumini from "./components/Alumini/Alumini.jsx"
 import "./App.css"
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       component = <Team />
       break
     case "/ALUMINI":
-      component = <Team />
+      component = <Alumini />
       break
     case "/bootcamp":
       component = <RegForm />
