@@ -8,6 +8,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import ParticlesComponent from "../Particlesbg/particles.jsx"
 import "./dots.css"
 
+import SagarTakur from "/src/components/Team/images/Teams/Sagar_Takur.jpg"
+
 function Card({ member, id }) {
   const { name, role, pfp, gt, ld } = member
   const cardContRef = useRef(null)
@@ -68,7 +70,7 @@ function Team() {
     {
       name: "Sagar Thakur",
       role: "Industry Relation Head",
-      pfp: "src/components/Team/images/Teams/Sagar_Takur.jpg",
+      pfp: SagarTakur,
       gt: "https://github.com/Matheletss",
       ld: "https://www.linkedin.com/in/sagar-thakur-223829259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
