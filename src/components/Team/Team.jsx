@@ -9,7 +9,7 @@ import ParticlesComponent from "../Particlesbg/particles.jsx"
 import "./dots.css"
 
 function Card({ member, id }) {
-  const { name, role, pfp } = member
+  const { name, role, pfp, gt, ld } = member
   const cardContRef = useRef(null)
   const [flipped, setFlipped] = useState(false)
   const timeoutRef = useRef(null)
@@ -47,13 +47,13 @@ function Card({ member, id }) {
           <ParticlesComponent id={`particles-${id}`} />
           <img className="logo" src={sds} alt="sds" />
           <img className="tprofile" src={pfp || defpfp} alt={name} />
-          <h3 className="name">{name}</h3>
-          <h4 className="role">{role}</h4>
+          <h4 className="name">{name}</h4>
+          <h5 className="role">{role}</h5>
           <div className="socials">
-            <a href="#" className="socialt">
+            <a href={ld} className="socialt">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="#" className="socialt">
+            <a href={gt} className="socialt">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
@@ -65,19 +65,25 @@ function Card({ member, id }) {
 
 function Team() {
   const teamMembers = [
-    { name: "person1", role: "role", pfp: defpfp },
-    { name: "person2", role: "role", pfp: defpfp },
-    { name: "person3", role: "role", pfp: defpfp },
-    { name: "person4", role: "role", pfp: defpfp },
-    { name: "person5", role: "role", pfp: defpfp },
-    { name: "person6", role: "role", pfp: defpfp },
-    { name: "person7", role: "role", pfp: defpfp },
-    { name: "person8", role: "role", pfp: defpfp },
-    { name: "person9", role: "role", pfp: defpfp },
-    { name: "person10", role: "role", pfp: defpfp },
-    { name: "person11", role: "role", pfp: defpfp },
-    { name: "person12", role: "role", pfp: defpfp },
-    { name: "person13", role: "role", pfp: defpfp },
+    {
+      name: "Sagar Thakur",
+      role: "Industry Relation Head",
+      pfp: "src/components/Team/images/Teams/Sagar_Takur.jpg",
+      gt: "https://github.com/Matheletss",
+      ld: "https://www.linkedin.com/in/sagar-thakur-223829259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
+    { name: "person2", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person3", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person4", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person5", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person6", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person7", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person8", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person9", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person10", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person11", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person12", role: "role", pfp: defpfp, gt: "#", ld: "#" },
+    { name: "person13", role: "role", pfp: defpfp, gt: "#", ld: "#" },
   ]
 
   return (

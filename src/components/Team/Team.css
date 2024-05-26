@@ -70,7 +70,7 @@
   -webkit-backface-visibility: hidden;
   border: 2px solid;
   border-radius: 5%;
-  border-color: grey;
+  border: none;
   height: clamp(350px, 24vw, 400px);
   width: clamp(250px, 34vw, 300px);
   overflow: hidden;
@@ -103,9 +103,12 @@
   transform: rotateY(0deg);
   transition: all 0s;
 }
-.back h3,
+.back h5,
 .back h4 {
   color: white;
+}
+.back h4 {
+  margin-top: 15px;
 }
 .frole {
   position: absolute;
