@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* Colors */
@@ -6,8 +6,8 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   /* Fonts */
-  --font-title: "Playfair Display";
-  --font-text: "Lato", sans-serif;
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Montserrat", sans-serif;
 }
 
 *,
